@@ -704,11 +704,13 @@ a:hover {
 
 .lightbox-close {
     position: absolute;
-    top: -24px;
-    right: -24px;
+    top: 24px;
+    right: 24px;
     background: var(--bg-color);
     font-size: 1.5rem;
     z-index: 1002;
+    cursor: pointer;
+    border: none;
 }
 
 .lightbox-image-container {
@@ -762,8 +764,8 @@ a:hover {
 
 @media (max-width: 768px) {
     .lightbox-close {
-        top: -60px;
-        right: 0;
+        top: 24px;
+        right: 24px;
     }
 }
 
