@@ -704,13 +704,24 @@ a:hover {
 
 .lightbox-close {
     position: absolute;
-    top: 24px;
-    right: 24px;
-    background: var(--bg-color);
-    font-size: 1.5rem;
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    background: var(--accent-color);
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 50%;
     z-index: 1002;
     cursor: pointer;
-    border: none;
+    box-shadow: var(--shadow-outer-sm);
+    transition: background 0.3s ease, transform 0.2s;
+}
+.lightbox-close:hover {
+    background: var(--accent-hover);
+    transform: scale(1.1);
 }
 
 .lightbox-image-container {
@@ -762,12 +773,7 @@ a:hover {
     margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
-    .lightbox-close {
-        top: 24px;
-        right: 24px;
-    }
-}
+/* Removed redundant mobile override; button styling is now consistent across breakpoints */
 
 /* ==========================================================================
    Footer
