@@ -45,8 +45,7 @@
             <div class="container hero-content">
                 <span class="tagline">Editorial & Social Media Design</span>
                 <h1 class="hero-headline">Crafting visual stories that demand attention.</h1>
-                <p class="hero-sub">I design high-impact brand identities, print posters, and educational carousels that
-                    pair seamless structure with bold typography.</p>
+                <p class="hero-sub">I design high-impact brand identities, client news graphics, print posters, and educational carousels that pair seamless structure with bold typography.</p>
                 <a href="#work" class="btn neumorphic-btn">View work</a>
             </div>
         </section>
@@ -62,7 +61,7 @@
                     <h2 class="section-title">About Me</h2>
                     <p>I am Aryan shelke, I'm a freelance designer who loves turning brands into something people
                         actually want to stop scrolling for. Using Adobe Photoshop and Illustrator, I create Instagram
-                        posts, stories, reel covers, and full content kits that feel fresh, cohesive, and true to who
+                        posts, stories, reel covers, client news graphics, and full content kits that feel fresh, cohesive, and true to who
                         you are. I'm big on clean layouts, intentional color choices, and the little details that make a
                         feed feel put-together — and I genuinely enjoy getting to know a brand's personality before I
                         start designing, so the result feels like you, not a template. If you're looking for someone who
@@ -73,8 +72,9 @@
                         <h3>Core Skills</h3>
                         <ul>
                             <li>Social Media Carousels</li>
-                            <li>Editorial Layouts</li>
+                            <li>Client News & Editorial Graphics</li>
                             <li>Poster Typography</li>
+                            <li>Brand Identity Design</li>
                         </ul>
                     </div>
                 </div>
@@ -84,78 +84,143 @@
         <!-- Work / Portfolio Section -->
         <section id="work" class="work section-padding">
             <div class="container">
-                <h2 class="section-title">Selected Work</h2>
+                <div class="section-header-flex">
+                    <h2 class="section-title">Selected Work</h2>
+                    <!-- Category Filter Buttons -->
+                    <div class="portfolio-filter-nav" role="tablist" aria-label="Portfolio Filters">
+                        <button class="filter-btn active neumorphic-btn" data-filter="all" role="tab" aria-selected="true">All</button>
+                        <button class="filter-btn neumorphic-btn" data-filter="client-work" role="tab" aria-selected="false">Client Work</button>
+                        <button class="filter-btn neumorphic-btn" data-filter="carousel" role="tab" aria-selected="false">Carousels</button>
+                    </div>
+                </div>
+
                 <div class="portfolio-grid">
-                    <!-- Project 1 (Portrait) -->
+                    <!-- Client Work News Post 1 (Portrait) -->
                     <article class="portfolio-card portrait neumorphic-card"
+                        data-category="client-work"
+                        data-full-image="images/Client work/Claude Code Forecast - Editorial Graphic.jpg"
+                        data-title="Claude Code & AI Forecast Graphic"
+                        data-desc="Custom tech news editorial post breaking down Anthropic's Claude Code release and future AI automation forecasts. Designed with bold typography and high-contrast editorial hierarchy for maximum feed scroll-stopping power.">
+                        <span class="card-badge">Client Work</span>
+                        <img src="images/Client work/Claude Code Forecast - Editorial Graphic.jpg" alt="Claude Code & AI Forecast Graphic">
+                        <div class="card-overlay">
+                            <span class="card-category-tag">Client Work</span>
+                            <h3>Claude Code & AI Forecast</h3>
+                        </div>
+                    </article>
+
+                    <!-- Client Work News Post 2 (Portrait) -->
+                    <article class="portfolio-card portrait neumorphic-card"
+                        data-category="client-work"
+                        data-full-image="images/Client work/Strait of Hormuz Tankers - Editorial Graphic.jpg"
+                        data-title="Strait of Hormuz Tanker Crisis"
+                        data-desc="Editorial news graphic analyzing global trade and energy market disruptions in the Strait of Hormuz. Engineered for social news channels requiring clear infographic storytelling and dramatic visual layout.">
+                        <span class="card-badge">Client Work</span>
+                        <img src="images/Client work/Strait of Hormuz Tankers - Editorial Graphic.jpg" alt="Strait of Hormuz Tanker Crisis Graphic">
+                        <div class="card-overlay">
+                            <span class="card-category-tag">Client Work</span>
+                            <h3>Strait of Hormuz Tanker Crisis</h3>
+                        </div>
+                    </article>
+
+                    <!-- Client Work News Post 3 (Portrait) -->
+                    <article class="portfolio-card portrait neumorphic-card"
+                        data-category="client-work"
+                        data-full-image="images/Client work/North Korea Missile Test - Editorial Graphic.jpg"
+                        data-title="Defense & Missile Test Breakdown"
+                        data-desc="World affairs media post covering international military updates. Formatted with distinctive editorial typography, clean visual focal points, and branded caption overlays.">
+                        <span class="card-badge">Client Work</span>
+                        <img src="images/Client work/North Korea Missile Test - Editorial Graphic.jpg" alt="Defense & Missile Test Breakdown Graphic">
+                        <div class="card-overlay">
+                            <span class="card-category-tag">Client Work</span>
+                            <h3>Defense & Missile Test Breakdown</h3>
+                        </div>
+                    </article>
+
+                    <!-- Carousel Project 1 (Portrait) -->
+                    <article class="portfolio-card portrait neumorphic-card"
+                        data-category="carousel"
                         data-full-image="images/portfolio/Arkeedesigns-01.jpg" data-title="Arkee Brand Identity"
                         data-desc="A comprehensive brand identity and logo design project emphasizing modern geometry, minimalism, and premium editorial aesthetics.">
                         <img src="images/portfolio/Arkeedesigns-01.jpg" alt="Arkee Brand Identity">
                         <div class="card-overlay">
+                            <span class="card-category-tag">Carousel</span>
                             <h3>Arkee Brand Identity</h3>
                         </div>
                     </article>
 
-                    <!-- Project 2 (Portrait) -->
+                    <!-- Carousel Project 2 (Portrait) -->
                     <article class="portfolio-card portrait neumorphic-card"
+                        data-category="carousel"
                         data-full-image="images/portfolio/Berserk-poster-2.jpg" data-title="Berserk Anime Poster"
                         data-desc="A dark fantasy editorial poster design inspired by the iconic Berserk manga series, featuring dramatic typography and high-contrast composition.">
                         <img src="images/portfolio/Berserk-poster-2.jpg" alt="Berserk Anime Poster">
                         <div class="card-overlay">
+                            <span class="card-category-tag">Carousel</span>
                             <h3>Berserk Anime Poster</h3>
                         </div>
                     </article>
 
-                    <!-- Project 3 (Wide Carousel) -->
+                    <!-- Carousel Project 3 (Wide Carousel) -->
                     <article class="portfolio-card wide neumorphic-card"
+                        data-category="carousel"
                         data-full-image="images/portfolio/Mock social media carousel-Recovered.jpg"
                         data-title="Brand Strategy Carousel"
                         data-desc="A multi-slide social media presentation detailing marketing frameworks, typography pairings, and clean slide layouts. (Swipe horizontally inside the lightbox to view all slides)">
                         <img src="images/portfolio/Mock social media carousel-Recovered.jpg"
                             alt="Brand Strategy Carousel">
                         <div class="card-overlay">
+                            <span class="card-category-tag">Carousel</span>
                             <h3>Brand Strategy Carousel</h3>
                         </div>
                     </article>
 
-                    <!-- Project 4 (Portrait) -->
+                    <!-- Carousel Project 4 (Portrait) -->
                     <article class="portfolio-card portrait neumorphic-card"
+                        data-category="carousel"
                         data-full-image="images/portfolio/Japanese-ramen-poster.jpg" data-title="Japanese Ramen Poster"
                         data-desc="A vibrant food illustration and typographic poster celebrating traditional Japanese street culture and culinary arts.">
                         <img src="images/portfolio/Japanese-ramen-poster.jpg" alt="Japanese Ramen Poster">
                         <div class="card-overlay">
+                            <span class="card-category-tag">Carousel</span>
                             <h3>Japanese Ramen Poster</h3>
                         </div>
                     </article>
 
-                    <!-- Project 5 (Portrait) -->
+                    <!-- Carousel Project 5 (Portrait) -->
                     <article class="portfolio-card portrait neumorphic-card"
+                        data-category="carousel"
                         data-full-image="images/portfolio/Lord krsna carousel post.jpg"
                         data-title="Divine Echoes Social Post"
                         data-desc="A series of elegant social media slides depicting spiritual themes through beautiful illustration and classical sans-serif fonts.">
                         <img src="images/portfolio/Lord krsna carousel post.jpg" alt="Divine Echoes Social Post">
                         <div class="card-overlay">
+                            <span class="card-category-tag">Carousel</span>
                             <h3>Divine Echoes Social Post</h3>
                         </div>
                     </article>
 
-                    <!-- Project 6 (Wide Carousel) -->
+                    <!-- Carousel Project 6 (Wide Carousel) -->
                     <article class="portfolio-card wide neumorphic-card"
+                        data-category="carousel"
                         data-full-image="images/portfolio/Multitasking carousel.jpg"
                         data-title="Productivity Carousel Series"
                         data-desc="An interactive, educational slide deck breaking down cognitive multitasking concepts into bite-sized, visually engaging diagrams. (Swipe horizontally inside the lightbox to view all slides)">
                         <img src="images/portfolio/Multitasking carousel.jpg" alt="Productivity Carousel Series">
                         <div class="card-overlay">
+                            <span class="card-category-tag">Carousel</span>
                             <h3>Productivity Carousel Series</h3>
                         </div>
                     </article>
 
-                    <!-- Project 7 (Wide Carousel) -->
+                    <!-- Carousel Project 7 (Wide Carousel) -->
                     <article class="portfolio-card wide neumorphic-card"
+                        data-category="carousel"
                         data-full-image="images/portfolio/Sales poster.jpg" data-title="Campaign Sales Banner"
                         data-desc="A commercial carousel display blending promotional copywriting with bold corporate colors and modern layouts. (Swipe horizontally inside the lightbox to view all slides)">
                         <img src="images/portfolio/Sales poster.jpg" alt="Campaign Sales Banner">
                         <div class="card-overlay">
+                            <span class="card-category-tag">Carousel</span>
                             <h3>Campaign Sales Banner</h3>
                         </div>
                     </article>
