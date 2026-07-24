@@ -127,6 +127,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // 4.1 Portfolio Category Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const workPortfolioGrid = document.querySelector('#work .portfolio-grid');
+    
+    if (filterBtns.length > 0 && workPortfolioGrid) {
+        const gridCards = workPortfolioGrid.querySelectorAll('.portfolio-card');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filterValue = btn.getAttribute('data-filter');
+                
+                filterBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-selected', 'false');
+                });
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+                
+                gridCards.forEach(card => {
+                    const cardCategories = (card.getAttribute('data-category') || '').split(' ');
+                    
+                    if (filterValue === 'all' || cardCategories.includes(filterValue)) {
+                        card.classList.remove('is-hidden');
+                    } else {
+                        card.classList.add('is-hidden');
+                    }
+                });
+            });
+        });
+    }
+
     lightboxClose.addEventListener('click', closeLightbox);
     lightboxOverlay.addEventListener('click', closeLightbox);
 
@@ -159,3 +190,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
